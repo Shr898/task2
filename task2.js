@@ -10,8 +10,11 @@ app.get('/more-information' , (req , res) =>{
     res.send('This is more information on task2!!!!!!');
 });
 
-app.listen(port , () => {
-    console.log("The task2 express app has started!!!!!!");
-});
+if (require.main === module) {
+    app.listen(port , () => {
+        console.log("The task2 express app has started!!!!!!");
+    });
+};
+
 
 module.exports = app;
