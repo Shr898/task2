@@ -17,3 +17,14 @@ The pipeline will be triggered on each git push I do. And each time it will re r
 
 ## 2. This is the jenkins pipeline setup phase done successfully.
 ![jenkins pipeline setup success](screenshots/Task2-Jenkins-CICD-Pipeline-Dashboard-Before-Running.png)
+
+## 3. This is the jenkins docker image build gone wrong. This happened because I had not added jenkins to the docker group. 
+##    Thats why it couldn't build the image and push it to DockerHub.
+![Jenkins docker image build failure](screenshots/task2-jenkins-pipeline-run-failure.png) 
+
+## 4. This is the last build run where it finally succeeded and ran all the stages and steps of checkout, dependency installation, testing,##    docker image push successfully. 
+![Run success](screenshots/task2-jenkins-dockerhub-image-push-success.png)
+![Run success](screenshots/task2-jenkins-docker-image-push-success-dashboard.png)
+
+## 5. This is the DockerHub screenshot of the image pushed. Its the "task2" image.
+![Image pushed to docker by jenkins](screenshots/task2-dockerhub-image-pushed-success.png)
