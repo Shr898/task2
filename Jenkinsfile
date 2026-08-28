@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = 'yourdockerhubusername/nodejs-demo-app'
+        IMAGE_NAME = 'shreyasaidev/task2'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Shr898/nodejs-demo-app.git'
+                git branch: 'main', url: 'https://github.com/Shr898/task2.git'
             }
         }
 
