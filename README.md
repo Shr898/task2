@@ -5,7 +5,7 @@ The CICD automation is done by Jenkins with the help of a Jenkinsfile that sits 
 This automation pipeline will test the app, build it, and deploy it on Dockerhub.
 The pipeline will be triggered on each git push I do. And each time it will re run the stages and steps.
 ## There are the following stages to the Jenkinsfile:
-1. Checkout.
+1. "Checkout" 
 2. "Install dependencies" will install the express and other dependencies for testing.
 3. "Test" will run "npm test" which will run the express server and test it.
 4. "Build Docker Image" will build the image of the app.
